@@ -1,0 +1,8 @@
+Data Peserta Bootcamp Digital Skill Devops
+
+1. Nama: Ma'i Suhartono
+2. Email: it@zamedia.id
+3. Sistem Operasi yang digunakan: Windows 10
+4. Akun Gitlab/Github: https://github.com/itzamedia
+5. Akun Telegram: @itzamedia
+6. Bahasa Pemrograman/Stack Yang dikuasai: Laravel,Vue Js,Next Js dan Golang,PHP
