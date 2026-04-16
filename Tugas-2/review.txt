@@ -1,0 +1,10 @@
+Saran perbaikan dari AI:
+
+1. Perlu pengecekan apakah file syslog.txt ada.
+2. Perlu penambahan notifikasi sukses.
+3. Bisa ditambahkan timestamp agar file tidak tertimpa.
+
+Pendapat saya:
+
+Saya setuju dengan saran AI karena membuat script lebih aman dan lebih baik.
+Namun untuk penggunaan sederhana, script ini sudah cukup.
