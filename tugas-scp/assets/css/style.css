@@ -1,0 +1,249 @@
+/* ===================== */
+/* RESET */
+/* ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+/* ===================== */
+/* HEADER */
+/* ===================== */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+
+    display: flex;
+    justify-content: space-evenly; /* penting */
+    align-items: center;
+
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* logo */
+header img {
+    width: 140px;
+}
+
+/* menu */
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 40px; /* biar jaraknya kayak gambar */
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+/* hover */
+header a:hover {
+    color: orange;
+}
+
+/* ===================== */
+/* MAIN */
+/* ===================== */
+main {
+    margin-top: 120px; /* biar gak ketiban header */
+}
+
+/* ===================== */
+/* HERO */
+/* ===================== */
+.container_hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 80px 100px; /* ini bikin layout mirip gambar */
+}
+
+/* kiri */
+.container_hero-headline {
+    max-width: 520px;
+}
+
+.container_hero-headline h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* social */
+.container_hero-headline ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* jarak icon */
+    margin-top: 15px;
+}
+
+.container_hero-headline a {
+    font-size: 20px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.container_hero-headline a:hover {
+    color: #007bff;
+}
+
+/* kanan */
+.container_hero-image img {
+    width: 420px;
+}
+
+/* ===================== */
+/* DESCRIBE (FINAL FIX)  */
+/* ===================== */
+.container_describe {
+    display: flex;
+    justify-content: space-between; /* bukan center lagi */
+    align-items: center;
+
+    padding: 120px 100px; /* bikin lebar seperti hero */
+}
+
+/* KIRI (BESAR) */
+.container_describe-animation {
+    width: 500px;
+    height: 350px;
+    background-color: #213a3d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_describe-animation i {
+    font-size: 120px;
+    color: white;
+    transition: 0.3s;
+}
+
+/* SAAT DIKLIK → TAMBAH TRANSLATE */
+.container_describe-animation:active i {
+    transform: rotate(10deg) translateX(40px);
+}
+
+/* KANAN */
+.container_describe-info__card {
+    width: 500px;
+    padding: 30px;
+
+    border: 3px solid #2c3e50;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+footer {
+    text-align: left;
+    padding: 20px 25px; /* dinaikkan dikit */
+    font-size: 16px;
+    color: #333;
+}
+
+/* ===================== */
+/* HISTORY FINAL FIX     */
+/* ===================== */
+.container-history {
+    display: flex;
+    flex-direction: column; /* WAJIB sesuai hint */
+    align-items: center;
+    gap: 40px;
+
+    padding: 100px 0;
+}
+
+/* MOTTO BOX */
+.container-history__motto {
+    width: 750px;
+    padding: 30px;
+
+    background: transparent;
+
+    
+}
+
+/* TITLE MOTTO */
+.container-history__motto p:first-child {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* DATA DIRI */
+.container-history__table {
+    width: 750px;
+}
+
+/* JUDUL */
+.container-history__table h1 {
+    margin-bottom: 20px;
+}
+
+/* TABLE */
+.container-history__table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* CELL */
+.container-history__table th,
+.container-history__table td {
+    padding: 12px 15px;
+    border: 1px solid #333;
+}
+
+
+/* BIAR KIRI IKUT ISI */
+.container-history__table th {
+    text-align: left;
+    font-weight: 600;
+    white-space: nowrap; /* biar gak turun */
+}
+
+/* ===================== */
+/* PORTFOLIO / GALLERY   */
+/* ===================== */
+.container-wrapping {
+    display: flex;
+    justify-content: center;
+    padding: 80px 100px;
+}
+
+/* WRAP GAMBAR */
+.container-wrapping__card {
+    display: flex;
+    flex-wrap: wrap; /* penting biar turun */
+    gap: 20px;
+    justify-content: center;
+    overflow: visible; /* biar zoom tidak kepotong */
+}
+
+/* GAMBAR */
+.container-wrapping__card img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.container-wrapping__card img:hover {
+    transform: scale(1.5);
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
